@@ -1,0 +1,12 @@
+name,value
+url,https://mysite.com
+environment,production
+email,noreply@company.com
+#
+# lines denoted with '#' are 
+# comments and will be ignored
+# such as the timeout entry below
+# 
+# timeout,60000
+#
+window_selector,<html title='*myapp*' />
