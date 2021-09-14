@@ -1,0 +1,2 @@
+Input argument should be one of these browser types : BrowserType.IE, BrowserType.Chrome, BrowserType.Edge, BrowserType.Firefox
+in_ElementOnPageSelector is the selector of the ElementExist activity (use UI Explorer to catch the selector string from page)

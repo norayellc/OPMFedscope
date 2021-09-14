@@ -168,28 +168,14 @@
                             </Assign>
                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFileFromBrowser workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName=".workflows\DownloadFileFromBrowser\DownloadFileFromBrowser.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
-                                <InArgument x:TypeArguments="ui:Browser" x:Key="in_BrowserObject">
-                                  <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="in_OPMBrowser" />
-                                </InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_DownloadedFilePath">
-                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_AccessDataBaseDirectory+io_QuarterToDownload+&quot;\TextFiles.zip&quot;" />
-                                </InArgument>
-                                <InArgument x:TypeArguments="x:Boolean" x:Key="in_OverWrite">
-                                  <Literal x:TypeArguments="x:Boolean" Value="True" />
-                                </InArgument>
+                                <InArgument x:TypeArguments="ui:Browser" x:Key="in_BrowserObject">[in_OPMBrowser]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_DownloadedFilePath">[in_AccessDataBaseDirectory+io_QuarterToDownload+"\TextFiles.zip"]</InArgument>
+                                <InArgument x:TypeArguments="x:Boolean" x:Key="in_OverWrite">True</InArgument>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_StartDownloadUiElement" />
-                                <InArgument x:TypeArguments="x:Int32" x:Key="in_TimeoutDownload">
-                                  <Literal x:TypeArguments="x:Int32" Value="300" />
-                                </InArgument>
-                                <OutArgument x:TypeArguments="x:Boolean" x:Key="out_FileDownloadedCorrectly">
-                                  <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="IsZipFileDownloaded" />
-                                </OutArgument>
-                                <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsOfficeFile">
-                                  <Literal x:TypeArguments="x:Boolean" />
-                                </InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_HREF">
-                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;http://opm.gov&quot;+CurrentRow(&quot;ZipFileURL&quot;).ToString" />
-                                </InArgument>
+                                <InArgument x:TypeArguments="x:Int32" x:Key="in_TimeoutDownload">300</InArgument>
+                                <OutArgument x:TypeArguments="x:Boolean" x:Key="out_FileDownloadedCorrectly">[IsZipFileDownloaded]</OutArgument>
+                                <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsOfficeFile">False</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_HREF">["http://opm.gov"+CurrentRow("ZipFileURL").ToString]</InArgument>
                                 <InArgument x:TypeArguments="ui:BrowserType" x:Key="in_OfficeBrowserType" />
                                 <InArgument x:TypeArguments="x:String" x:Key="in_OfficeFileURL" />
                               </ui:InvokeWorkflowFile.Arguments>
@@ -225,28 +211,14 @@
                         <If.Then>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DownloadFileFromBrowser workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName=".workflows\DownloadFileFromBrowser\DownloadFileFromBrowser.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="ui:Browser" x:Key="in_BrowserObject">
-                                <mva:VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="in_OPMBrowser" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_DownloadedFilePath">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_AccessDataBaseDirectory+io_QuarterToDownload+&quot;\TextFiles.zip&quot;" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:Boolean" x:Key="in_OverWrite">
-                                <Literal x:TypeArguments="x:Boolean" Value="True" />
-                              </InArgument>
+                              <InArgument x:TypeArguments="ui:Browser" x:Key="in_BrowserObject">[in_OPMBrowser]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="in_DownloadedFilePath">[in_AccessDataBaseDirectory+io_QuarterToDownload+"\TextFiles.zip"]</InArgument>
+                              <InArgument x:TypeArguments="x:Boolean" x:Key="in_OverWrite">True</InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="in_StartDownloadUiElement" />
-                              <InArgument x:TypeArguments="x:Int32" x:Key="in_TimeoutDownload">
-                                <Literal x:TypeArguments="x:Int32" Value="300" />
-                              </InArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_FileDownloadedCorrectly">
-                                <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="IsZipFileDownloaded" />
-                              </OutArgument>
-                              <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsOfficeFile">
-                                <Literal x:TypeArguments="x:Boolean" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_HREF">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;http://opm.gov&quot;+CurrentRow(&quot;ZipFileURL&quot;).ToString" />
-                              </InArgument>
+                              <InArgument x:TypeArguments="x:Int32" x:Key="in_TimeoutDownload">300</InArgument>
+                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_FileDownloadedCorrectly">[IsZipFileDownloaded]</OutArgument>
+                              <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsOfficeFile">False</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="in_HREF">["http://opm.gov"+CurrentRow("ZipFileURL").ToString]</InArgument>
                               <InArgument x:TypeArguments="ui:BrowserType" x:Key="in_OfficeBrowserType" />
                               <InArgument x:TypeArguments="x:String" x:Key="in_OfficeFileURL" />
                             </ui:InvokeWorkflowFile.Arguments>

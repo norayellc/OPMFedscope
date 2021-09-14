@@ -1,11 +1,8 @@
 {
-  "name": "OPMFedscope",
-  "description": "OPMFedscope",
-  "main": "OPMFedscope.xaml",
+  "name": "DownloadFileFromBrowser",
+  "description": "DownloadFileFromBrowser",
+  "main": "DownloadFileFromBrowser.xaml",
   "dependencies": {
-    "UiPath.Database.Activities": "[1.4.0]",
-    "UiPath.Excel.Activities": "[2.10.4]",
-    "UiPath.Mail.Activities": "[1.10.5]",
     "UiPath.System.Activities": "[21.4.1]",
     "UiPath.UIAutomation.Activities": "[21.4.4]"
   },
@@ -13,7 +10,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.4.0",
-  "projectVersion": "1.0.7",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -43,8 +40,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "OPMFedscope.xaml",
-      "uniqueId": "c1164bf7-9884-4f79-bab1-05d14fb59655",
+      "filePath": "DownloadFileFromBrowser.xaml",
+      "uniqueId": "28394b52-03c3-48d1-a186-f32bc39c0d6d",
       "input": [],
       "output": []
     }

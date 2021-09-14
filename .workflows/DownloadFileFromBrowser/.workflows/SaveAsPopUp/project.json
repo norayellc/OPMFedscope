@@ -1,9 +1,8 @@
 {
-  "name": "OPMFedscope",
-  "description": "OPMFedscope",
-  "main": "OPMFedscope.xaml",
+  "name": "SaveAsFile",
+  "description": "SaveAsFile",
+  "main": "SaveAsFile.xaml",
   "dependencies": {
-    "UiPath.Database.Activities": "[1.4.0]",
     "UiPath.Excel.Activities": "[2.10.4]",
     "UiPath.Mail.Activities": "[1.10.5]",
     "UiPath.System.Activities": "[21.4.1]",
@@ -13,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.4.4.0",
-  "projectVersion": "1.0.7",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -43,8 +42,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "OPMFedscope.xaml",
-      "uniqueId": "c1164bf7-9884-4f79-bab1-05d14fb59655",
+      "filePath": "SaveAsFile.xaml",
+      "uniqueId": "c0586a49-c230-451e-81e9-6b4d50e47bf7",
       "input": [],
       "output": []
     }
